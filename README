@@ -1,0 +1,40 @@
+# Nettoyez-le-web-comme-VOUS-l-entendez-
+
+## 🚀 Vue d'ensemble (Overview)
+
+Ce projet est une application web conçue selon les principes de légèreté et de performance.
+
+L'objectif est de prouver qu'il est possible de créer des expériences web modernes tout en respectant le temps de l'utilisateur et sa bande passante.
+
+## 🎯 Nos Engagements (Core Principles)
+
+| Critère | Statut | Avantage |
+| :--- | :--- | :--- |
+| **Une seule requête** | ✅ Atteint | Le CSS et le JS sont **inlinés** pour un chargement instantané. |
+| **Poids total** | ⚖️ **< 10 KB** (Compressé) | Charge utile minimale. |
+| **Contenu Prioritaire** | ✅ Atteint | Structure HTML sémantique, le texte est servi en premier. |
+| **Accessibilité** | ✅ Atteint | Haut contraste, navigation clavier (ARIA/Focus visible). |
+| **Dépendances** | 🚫 Zéro | Utilisation exclusive de **Vanilla HTML/CSS/JS** (pas de frameworks). |
+
+## 🛠️ Stack Technique
+
+* **HTML:** HTML5 Sémantique.
+* **CSS:** CSS pur et critique (inliné).
+* **JavaScript:** Vanilla JS minimaliste (pour le menu mobile et le lazy-loading).
+
+## ✨ Fonctionnalités Clés
+
+1.  **Chargement Paresseux des Médias (Lazy Loading):** Les images non critiques sont chargées uniquement lorsqu'elles entrent dans la vue de l'utilisateur (via `IntersectionObserver` ou `loading="lazy"`).
+2.  **Navigation Accessible:** Menu mobile géré via un petit script JS et des attributs ARIA pour l'accessibilité.
+3.  **Compatibilité Terminale:** La structure simple assure une excellente lisibilité dans les navigateurs textuels (`w3m`, `links`).
+
+## ⚙️ Comment Exécuter le Projet (How to Run)
+
+Comme il s'agit d'un projet de développement frontal pur et sans serveur, vous pouvez l'exécuter directement :
+
+1.  Clonez ce dépôt :
+    ```bash
+    git clone [https://github.com/wadhah77/Nettoyez-le-web-comme-VOUS-l-entendez-.git](https://github.com/wadhah77/Nettoyez-le-web-comme-VOUS-l-entendez-.git)
+    ```
+2.  Ouvrez le fichier `index.html` dans votre navigateur.
+3.  (Optionnel) Utilisez un simple serveur local (comme `live-server` ou Python's `http.server`) pour tester le projet avec une compression Gzip simulée.
