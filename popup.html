@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>ZenWeb Controle</title>
+    <style>
+        body { font-family: Arial, sans-serif; width: 250px; padding: 10px; }
+        h3 { color: #333; margin-top: 0; }
+        button { 
+            width: 100%; padding: 10px; margin: 5px 0; 
+            border: none; border-radius: 5px; 
+            cursor: pointer; font-size: 16px; 
+            transition: background-color 0.2s;
+        }
+        #toggleEditor { background-color: #007bff; color: white; }
+        #toggleEditor:hover { background-color: #0056b3; }
+        #managementLink { background-color: #6c757d; color: white; }
+        #managementLink:hover { background-color: #5a6268; }
+        .status { margin-top: 10px; font-size: 0.9em; text-align: center; }
+    </style>
+</head>
+<body>
+    <h3>ZenWeb</h3>
+    <p>Nettoyez ce site a votre facon !</p>
+
+    <button id="toggleEditor">Activer le Mode Edition</button>
+    
+    <button id="managementLink">Gerer/Reinitialiser les Sites</button>
+    
+    <div class="status" id="statusMessage"></div>
+    
+    <script src="popup.js"></script>
+</body>
+</html>

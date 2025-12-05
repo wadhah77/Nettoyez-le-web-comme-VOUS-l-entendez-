@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>ZenWeb - Gestion des Sites</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; background-color: #f4f4f9; }
+        h1 { color: #333; }
+        .site-list { margin-top: 20px; }
+        .site-item { 
+            background-color: white; border: 1px solid #ddd; padding: 15px; 
+            margin-bottom: 10px; border-radius: 5px; 
+            display: flex; justify-content: space-between; align-items: center;
+        }
+        .site-item strong { font-size: 1.1em; color: #007bff; }
+        .reset-btn { background-color: #ffc107; color: #333; border: none; padding: 5px 10px; cursor: pointer; border-radius: 3px; }
+        #globalReset { background-color: #dc3545; color: white; margin-top: 20px; padding: 10px; border: none; cursor: pointer; border-radius: 5px; }
+    </style>
+</head>
+<body>
+    <h1> ZenWeb - Sites Nettoyes</h1>
+    <p>Gerez et reinitialisez les sites sur lesquels vous avez masque des elements.</p>
+
+    <div id="siteList" class="site-list">
+        <p id="loadingMessage">Chargement des regles...</p>
+    </div>
+
+    <button id="globalReset">Reinitialiser TOUS les sites (Attention !)</button>
+    
+    <script src="management_page.js"></script>
+</body>
+</html>
